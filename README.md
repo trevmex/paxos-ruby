@@ -1,4 +1,4 @@
-# Paxos
+# Paxos ![](https://travis-ci.org/trevmex/paxos-ruby.png)
 
 This is a pure Ruby implementation of the Paxos algorithm described in ["Paxos Made Moderately Complex" by Robert van Renesse](http://www.cs.cornell.edu/home/rvr/Paxos/).
 
