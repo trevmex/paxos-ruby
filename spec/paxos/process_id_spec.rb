@@ -4,7 +4,7 @@ require 'paxos/process_id'
 describe Paxos::ProcessId do
   subject { Paxos::ProcessId.new(:foo) }
 
-  describe '#==' do
+  describe '#<=>' do
     it { should eq(subject) }
     it { should eq(Paxos::ProcessId.new(:foo)) }
     it { should_not eq(Paxos::ProcessId.new(:bar)) }
