@@ -1,6 +1,4 @@
 require 'spec_helper'
-require 'paxos/process_id'
-require 'paxos/ballot_number'
 
 describe Paxos::BallotNumber do
   subject { Paxos::BallotNumber.new(1, Paxos::ProcessId.new(:foo)) }
@@ -23,7 +21,7 @@ describe Paxos::BallotNumber do
 
   describe '#to_s' do
     it 'turns into a string' do
-      subject.to_s.should eq('BN(1, foo)')
+      expect(subject.to_s).to eq('BN(1, foo)')
     end
   end
 end

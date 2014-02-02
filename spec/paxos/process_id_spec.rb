@@ -1,5 +1,4 @@
 require 'spec_helper'
-require 'paxos/process_id'
 
 describe Paxos::ProcessId do
   subject { Paxos::ProcessId.new(:foo) }
@@ -17,7 +16,7 @@ describe Paxos::ProcessId do
 
   describe '#to_s' do
     it 'turns into a string' do
-      subject.to_s.should eq('foo')
+      expect(subject.to_s).to eq('foo')
     end
   end
 end
