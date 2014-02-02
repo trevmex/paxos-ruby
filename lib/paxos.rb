@@ -1,9 +1,6 @@
-require 'paxos/version'
-require 'paxos/process_id'
-require 'paxos/ballot_number'
-require 'paxos/command'
-require 'paxos/p_value'
-require 'paxos/message'
+require File.join 'paxos', 'version'
+require File.join 'paxos', 'model'
+require File.join 'paxos', 'message'
 
 # The full Paxos protocol as described by "Paxos Made Complex" by Robbert van Renesse
 # (see http://www.cs.cornell.edu/home/rvr/Paxos/)
